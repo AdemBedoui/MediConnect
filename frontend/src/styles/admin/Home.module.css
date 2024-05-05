@@ -1,0 +1,48 @@
+.card {
+  cursor: pointer;
+  box-shadow: 0px 4px 22px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  margin-top: -15px;
+}
+.color1 {
+  background: rgba(6, 203, 144, 0.13);
+}
+.color2 {
+  background: rgba(203, 6, 100, 0.13);
+}
+.color3 {
+  background: rgba(175, 203, 6, 0.13);
+}
+.color4 {
+  background: rgba(220, 201, 99, 0.13);
+}
+.color5 {
+  background: rgba(72, 219, 219, 0.37);
+}
+.card p {
+  font-weight: 700;
+  font-size: 15px;
+
+  color: #056ab1;
+  margin: 5px;
+}
+.card img {
+  width: 30px;
+  height: 30px;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
