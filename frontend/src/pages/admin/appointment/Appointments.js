@@ -359,7 +359,7 @@ function Appointments(props) {
               ) : (
                 <div ref={componentRef}>
                   <div className="printHeader">
-                    <img alt="MediConnect" src={"./logo.webp"} />
+                    <img alt="MEDICONNECT" src={"./logo.webp"} />
                     <h1>
                       Rendez-vous{" "}
                       {(period.startDate === moment().format("yyyy-MM-DD") ||

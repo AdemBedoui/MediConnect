@@ -351,7 +351,7 @@ function Home(props) {
               <div className={styles.tableContainer}>
                 <div ref={componentRef}>
                   <div className="printHeader">
-                    <img alt="MediConnect" src={"./logo.webp"} />
+                    <img alt="MEDICONNECT" src={"./logo.webp"} />
                     <h1>{currentEstablishment?.name}</h1>
                     <h1>
                       Rendez-vous{" "}

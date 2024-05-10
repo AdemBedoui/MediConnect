@@ -183,7 +183,7 @@ function Establishment() {
                 }}
                 style={{ cursor: "pointer" }}
               >
-                se connecter à {establishment.name}
+                Se connecter à {establishment.name}
               </h1>
               &nbsp;&nbsp;
               <LoginIcon sx={{ fontSize: "30px" }} color="secondary" />

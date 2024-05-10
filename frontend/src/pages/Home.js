@@ -98,7 +98,7 @@ function Home(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MediConnect
+        MEDICONNECT
       </Typography>
       <Divider />
       <List>
@@ -134,7 +134,7 @@ function Home(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            MediConnect
+            MEDICONNECT
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button
@@ -639,7 +639,7 @@ function Home(props) {
 
         <section className={styles.body}>
           <div className={styles.divspace}>
-            <h2>Vos rendez-vous avec MediConnect</h2>
+            <h2>Vos rendez-vous avec MEDICONNECT</h2>
             <p>
               Une solution qui organise votre activité, améliore l’expérience de
               vos patients et vous fait gagner du temps et des ressources

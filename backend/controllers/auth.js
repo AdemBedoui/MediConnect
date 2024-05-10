@@ -60,14 +60,14 @@ export const register = async (req, res) => {
   } else {
     try {
       transporter.sendMail({
-        from: "MediConnect",
+        from: "MEDICONNECT",
         to: "adembedoui20@gmail.com",
         subject: "New demand",
         text: `You got a new demand from ${name}`,
         html:
           `<div ` +
           mailcss.background +
-          `><h1>MediConnect</h1>
+          `><h1>MEDICONNECT</h1>
               <div` +
           mailcss.body +
           `>
@@ -161,14 +161,14 @@ export const forgotPassword = async (req, res) => {
       exists.token = token;
       exists.save();
       transporter.sendMail({
-        from: "MediConnect",
+        from: "MEDICONNECT",
         to: { email },
         subject: "Reset password",
         text: `follow instructions to recover your password`,
         html:
           `<div ` +
           mailcss.background +
-          `><h1>MediConnect</h1>
+          `><h1>MEDICONNECT</h1>
               <div` +
           mailcss.body +
           `>
