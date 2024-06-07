@@ -208,15 +208,15 @@ function AddAppointment(props) {
             }}
             value={status}
             options={[
-              { id: 0, label: "WAITING" },
-              { id: 2, label: "CONFIRMED" },
-              { id: 3, label: "MISSED" },
+              { id: 0, label: "EN ATTENTE", value: "WAITING" },
+              { id: 2, label: "CONFIRMÉ", value: "CONFIRMED" },
+              { id: 3, label: "MANQUÉ", value: "MISSED" },
             ]}
             onChange={(e, val) => {
               setStatus(val);
               setAppointment({
                 ...appointment,
-                status: val !== null || val === "" ? val.label : "WAITING",
+                status: val !== null || val === "" ? val.value : "WAITING",
               });
             }}
             renderInput={(params) => (

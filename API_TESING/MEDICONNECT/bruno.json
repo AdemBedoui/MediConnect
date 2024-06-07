@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "MEDICONNECT",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

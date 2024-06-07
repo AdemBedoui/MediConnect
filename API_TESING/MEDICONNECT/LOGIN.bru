@@ -1,0 +1,22 @@
+meta {
+  name: LOGIN
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5000/login
+  body: json
+  auth: none
+}
+
+query {
+  : 
+}
+
+body:json {
+  {
+    "email": "adembedoui20@gmail.com",
+    "password": "Facebook28"
+  }
+}

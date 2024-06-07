@@ -20,6 +20,7 @@ import BlockMember from "./components/BlockMember";
 import CheckIcon from "@mui/icons-material/Check";
 import LoginIcon from "@mui/icons-material/Login";
 import { useDispatch, useSelector } from "react-redux";
+import { Button } from 'react-bootstrap';
 
 function Establishment() {
   const { id } = useParams();
@@ -165,7 +166,10 @@ function Establishment() {
                 justifyContent: "flex-start",
               }}
             >
-              <h1
+              <Button
+                variant="success"
+                size="lg"
+                style={{ backgroundColor: '#28a745', borderColor: '#28a745', color: 'white' }}
                 onClick={() => {
                   dispatch({
                     type: "SET_CURRENT_DOCTOR",
@@ -181,10 +185,9 @@ function Establishment() {
                   });
                   history("/admin-space");
                 }}
-                style={{ cursor: "pointer" }}
               >
                 Se connecter à {establishment.name}
-              </h1>
+              </Button>
               &nbsp;&nbsp;
               <LoginIcon sx={{ fontSize: "30px" }} color="secondary" />
             </div>

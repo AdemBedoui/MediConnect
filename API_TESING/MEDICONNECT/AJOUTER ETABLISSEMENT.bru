@@ -1,0 +1,28 @@
+meta {
+  name: AJOUTER ETABLISSEMENT
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:5000/establishment/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Clinique Centrale",
+    "phone": "1234567890",
+    "adress": "123 rue Santé",
+    "city": "Ville Santé",
+    "specialty": "Médecine Générale",
+    "postalCode": "12345",
+    "startHour": 8,
+    "endHour": 18,
+    "weekend": [
+      6,
+      7
+    ]
+  }
+}

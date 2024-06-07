@@ -12,5 +12,5 @@ const doctorSchema = mongoose.Schema(
   },
   { timestamps: true }
 );
-
+ 
 export default mongoose.model("Doctor", doctorSchema);

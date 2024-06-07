@@ -183,6 +183,7 @@ export const getRoomPatient = async (req, res) => {
   }
 };
 
+
 export const unreadCountPatient = async (req, res) => {
   var count = 0;
   const rooms = await Room.find({ patient: req.params.id }).populate({
