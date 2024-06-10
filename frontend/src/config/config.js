@@ -5,7 +5,7 @@ const compress = new Compress();
 export function getUrl() {
   return process.env.NODE_ENV === "production"
     ? process.env.REACT_APP_SERVER_URL
-    : "http://localhost:5000";
+    : "https://mediconnect-ow3b.onrender.com";
 }
 
 export async function compressImage(file) {
@@ -18,4 +18,3 @@ export async function compressImage(file) {
   });
   return `data:image/webp;base64,${res[0].data}`;
 }
- 

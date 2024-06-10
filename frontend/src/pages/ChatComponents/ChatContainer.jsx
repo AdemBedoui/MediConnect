@@ -23,10 +23,13 @@ export default function ChatContainer({ currentChat, socket }) {
     receiver = currentChat?._id;
 
     console.log("data fetch message ", sender, receiver);
-    const response = await axios.post("http://localhost:5000/getmsg", {
-      from: sender,
-      to: receiver,
-    });
+    const response = await axios.post(
+      "http://https://mediconnect-ow3b.onrender.com0/getmsg",
+      {
+        from: sender,
+        to: receiver,
+      }
+    );
 
     if (response) {
       setMessages(response.data);
@@ -55,7 +58,7 @@ export default function ChatContainer({ currentChat, socket }) {
       msg,
     });
 
-    await axios.post("http://localhost:5000/addmsg", {
+    await axios.post("http://https://mediconnect-ow3b.onrender.com0/addmsg", {
       from: sender,
       to: receiver,
       message: msg,

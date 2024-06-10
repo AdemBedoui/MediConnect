@@ -33,7 +33,7 @@ export default function Chat() {
   const classes = useStyles();
   useEffect(() => {
     if (userInfo) {
-      socket.current = io("http://localhost:5000");
+      socket.current = io("http://https://mediconnect-ow3b.onrender.com0");
       socket.current.emit("add-user", userInfo._id);
     }
   }, [userInfo]);
