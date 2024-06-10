@@ -28,7 +28,7 @@ app.enable("trust proxy");
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://glowing-phoenix-bec345.netlify.app/"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
