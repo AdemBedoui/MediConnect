@@ -64,7 +64,7 @@ const server = app.listen(PORT, () =>
 const io = new SocketIO(server, {
   // Use the correct SocketIO class
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://glowing-phoenix-bec345.netlify.app/",
     credentials: true,
   },
 });
