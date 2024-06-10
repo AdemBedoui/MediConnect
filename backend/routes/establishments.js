@@ -14,7 +14,7 @@ import auth from "../middlewares/auth.js";
 
 const router = express.Router();
 router.post("/getDoctorAndAdmin/", getDoctorAndAdmin);
-router.post("/establishment/add", auth, add);
+router.post("/establishment/add", add);
 router.get("/establishment/get", auth, get);
 router.post("/establishment/getforpatient", auth, getForPatient);
 router.post("/establishment/:id", auth, getById);
